@@ -278,7 +278,7 @@ def display_taxon(value, rank=None):
     korean = TAXON_KO.get(original.upper())
     if korean:
         return f"{korean} ({original})"
-    return f"한국어 명칭 미등록 ({original})"
+    return original
 
 def display_animal_name(value):
     if pd.isna(value) or str(value).strip() == "":
@@ -286,7 +286,7 @@ def display_animal_name(value):
     original = str(value).strip()
     if any("가" <= ch <= "힣" for ch in original):
         return original
-    return f"한국어 이름 미등록 ({original})"
+    return original
 
 def display_risk(code):
     if pd.isna(code):
