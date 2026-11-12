@@ -20,7 +20,7 @@ st.set_page_config(
 # 2. 디자인 설정
 # =========================================================
 
-st.markdown("""
+st.markdown(""")
 <style>
     .stApp {
         background-color: #F1F7FD;
